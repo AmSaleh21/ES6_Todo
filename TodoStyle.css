@@ -1,0 +1,124 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* container to center the block */
+.container {
+    width: 750px;
+    height: auto;
+    margin: 35px auto;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 50%;
+    border: 2px grey solid;
+    border-radius: 10px;
+}
+
+/* Remove margins, bullets and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 8px 12px 25px;
+    background: #fff;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When the check button is pressed
+add a background color and strike out text */
+ul li.checked {
+    background: #777;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 15px;
+}
+
+.close:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* Style the check button */
+.check {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    padding: 12px 15px;
+}
+
+.check:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Style the control (text and add) */
+.control {
+    padding: 30px 40px;
+    color: #555;
+    text-align: center;
+}
+
+/* Clear floats after the control */
+.control:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flex {
+    flex: auto;
+}
+
+/* the task label*/
+#task {
+    margin: 0;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: 2px grey solid;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Style the "Add" button */
+#addBtn {
+    padding: 10px;
+    width: 30%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
