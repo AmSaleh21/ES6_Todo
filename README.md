@@ -31,6 +31,7 @@ the local storage will be hocked to the file location
 ```
 
 <!-- TODO: add an image here -->
+<img src="ScreenShot.png">
 
 ## Usage <a name = "usage"></a>
 
